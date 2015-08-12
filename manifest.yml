@@ -1,0 +1,6 @@
+---
+applications:
+- name: spring-cloud-override
+  memory: 512M
+  host: override
+  path: build/libs/springcloud-0.0.1-SNAPSHOT.jar
