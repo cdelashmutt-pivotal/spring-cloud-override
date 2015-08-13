@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
 	@Autowired
-	private UserService userServiceConfig;
+	private UserService userService;
 	
 	@RequestMapping("/")
 	public String hello() {
 		StringBuilder strBuilder = new StringBuilder("Hello!\nUser service is:\n");
-		strBuilder.append(userServiceConfig.getUrl().toString());
+		strBuilder.append(userService.getUrl().toString());
 		return strBuilder.toString();
 	}
 }

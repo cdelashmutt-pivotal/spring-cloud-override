@@ -2,8 +2,14 @@ package demo;
 
 import java.net.URL;
 
-public interface UserService {
+public class UserService {
+	private URL url;
+	
+	public URL getUrl() {
+		return url;
+	}
 
-	public abstract URL getUrl();
-
+	public void setUrl(URL url) {
+		this.url = url;
+	}
 }
